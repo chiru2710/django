@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — YourCompany</title>
+  <style>
+    :root{
+      --accent:#EF6C6C;
+      --muted:#6B7280;
+      --bg:#0f172a;
+      --card:#0b1220;
+      --radius:14px;
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    body{
+      margin:0;
+      background:linear-gradient(180deg,#071021 0%, #071527 100%);
+      color:#E6EEF8;
+      display:flex;
+      justify-content:center;
+      padding:40px 20px;
+    }
+    .container{
+      width:100%;
+      max-width:700px;
+    }
+    .card{
+      background:var(--card);
+      padding:28px;
+      border-radius:var(--radius);
+      box-shadow:0 6px 30px rgba(2,6,23,0.6);
+      border:1px solid rgba(255,255,255,0.03);
+    }
+    h2{margin-top:0}
+    label{display:block;margin-top:12px;margin-bottom:6px;font-size:14px;color:var(--muted);}
+    input, textarea{
+      width:100%;
+      padding:10px 12px;
+      border-radius:10px;
+      border:none;
+      background:rgba(255,255,255,0.04);
+      color:#E6EEF8;
+      font-size:14px;
+      resize:none;
+    }
+    button{
+      margin-top:16px;
+      background:var(--accent);
+      color:#071021;
+      padding:12px 18px;
+      border:none;
+      border-radius:10px;
+      font-weight:700;
+      cursor:pointer;
+    }
+    .nav{
+      display:flex;align-items:center;justify-content:space-between;padding:14px 18px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));margin-bottom:28px;border:1px solid rgba(255,255,255,0.03);
+    }
+    .nav a{color:inherit;text-decoration:none;margin-left:16px;font-size:14px}
+  </style>
+</head>
+<body>
+    
+  <div class="container">
+    <nav class="nav">
+      <div><strong>YourCompany</strong></div>
+      <div>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+        <a href="/login" style="background:var(--accent);padding:6px 12px;border-radius:10px;color:#071021;">Login</a>
+      </div>
+    </nav>
+
+    <div class="card">
+      <h2>Contact Us</h2>
+      <p style="color:var(--muted);font-size:14px;margin-bottom:18px;">We’d love to hear from you! Fill out the form below or email us at <strong>contact@yourcompany.com</strong>.</p>
+      <form action="#" method="POST">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

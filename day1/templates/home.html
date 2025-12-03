@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beautiful Home Page</title> 
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: #fff;
+      min-height: 100vh;
+    }
+
+    /* NAVBAR */
+    nav {
+      width: 100%;
+      background: rgba(255,255,255,0.1);
+      backdrop-filter: blur(10px);
+      padding: 18px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;  /* Fixed position at top */
+      top: 0;
+      left: 0;
+      z-index: 10;
+    }
+
+    nav .logo {
+      font-size: 26px;
+      font-weight: 700;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ffd369;
+    }
+
+    /* HERO SECTION */
+    .hero {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      padding: 120px 20px 20px 20px; /* Added top padding for fixed navbar */
+    }
+
+    .hero h1 {
+      font-size: 60px;
+      font-weight: 800;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .hero p {
+      margin-top: 15px;
+      font-size: 20px;
+      max-width: 650px;
+      animation: fadeIn 1.4s ease-in-out;
+    }
+
+    .hero button {
+      margin-top: 30px;
+      padding: 12px 28px;
+      border: none;
+      background: #ffd369;
+      color: #333;
+      border-radius: 10px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: 0.3s;
+      animation: fadeIn 1.6s ease-in-out;
+    }
+
+    .hero button:hover {
+      background: #f6c248;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(25px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">MyWebsite</div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/contact">Contact</a></li>
+      <li><a href="/login">Login</a></li>
+      <li><a href="/registration">Register</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero" id="home">
+    <h1>Welcome to Our Website</h1>
+    <p>Experience a beautifully designed homepage with navigation links, smooth UI, and modern design elements.</p>
+    <button>Get Started</button>
+  </section>
+
+</body>
+</html>
